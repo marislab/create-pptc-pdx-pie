@@ -3,7 +3,7 @@
 mainDir <- "~/create-pptc-pdx-pie/"
 dataDir <- paste0(mainDir,"data/")
 # set path to your git cloned repo
-script.folder <- "~/Documents/GitHub/create-pptc-pdx-pie/R/" 
+script.folder <- paste0(mainDir, "R/") 
 ##create directory for output files
 ifelse(!dir.exists(file.path(paste0(mainDir, "output/"))), dir.create(file.path(paste0(mainDir, "output/"))), 
        "Directory exists!")
