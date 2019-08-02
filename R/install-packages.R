@@ -1,34 +1,37 @@
 ####install required packages
 if(!require(tidyr)){
   install.packages("tidyr", repos='http://cran.us.r-project.org')
-  library(tidyr)
+  require(tidyr)
 }
 if(!require(dplyr)){
   install.packages("dplyr", repos='http://cran.us.r-project.org')
-  library(dplyr)
+  require(dplyr)
 }
 if(!require(devtools)){
   install.packages("devtools", repos='http://cran.us.r-project.org')
-  library(devtools)
+  require(devtools)
 }
 if(!require(sunburstR)){
   devtools::install_github("timelyportfolio/sunburstR")
-  library(sunburstR)
+  require(sunburstR)
   
 }
 if(!require(htmltools)){
   install.packages("htmltools", repos='http://cran.us.r-project.org')
-  library(htmltools)
+  require(htmltools)
 }
 if(!require(d3r)){
   install.packages("d3r", repos='http://cran.us.r-project.org')
-  library(d3r)
+  require(d3r)
 }
 if(!require(treemap)){
   install.packages("treemap", repos='http://cran.us.r-project.org')
-  library(treemap)
+  require(treemap)
 }
 if(!require(mapview)){
   devtools::install_github("r-spatial/mapview")
-  library(mapview)
+  require(mapview)
 }
+
+
+
