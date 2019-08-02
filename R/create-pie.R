@@ -126,7 +126,9 @@ p<- sund2b(
   ),
   valueField = "vSize"
 )
-print(p)
+#print(p)
 ## create .html 
 mapshot(p, url = paste0(mainDir, "output/pptc-pdx-pie.html"))
 
+##unlink Rplots.pdf file - not sure why this is being created
+#unlink(mainDir, "Rplots.pdf")

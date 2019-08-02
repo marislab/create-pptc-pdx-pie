@@ -2,7 +2,6 @@
 if(!require(tidyr)){
   install.packages("tidyr", repos='http://cran.us.r-project.org')
   library(tidyr)
-  
 }
 if(!require(dplyr)){
   install.packages("dplyr", repos='http://cran.us.r-project.org')
