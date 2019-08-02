@@ -16,7 +16,6 @@ source(paste0(script.folder, "install-packages.R"))
 
 ##load clinical, reshape
 clin <- read.delim(paste0(dataDir, "pptc-pdx-clinical-web.txt"), header = T, sep = "\t", check.names = F)
-length(unique(clin$Histology.oncotree))
 clin$Histology.oncotree <- ifelse(clin$Histology.Detailed2 == "Extracranial Rhabdoid", "RHAB", 
                                   ifelse(clin$Histology.Detailed2 == "MB-SHH", "MB-SHH", 
                                          ifelse(clin$Histology.Detailed2 == "MB-WNT", "MB-WNT",
@@ -131,4 +130,4 @@ p<- sund2b(
 mapshot(p, url = paste0(mainDir, "output/pptc-pdx-pie.html"))
 
 ##unlink Rplots.pdf file - not sure why this is being created
-#unlink(mainDir, "Rplots.pdf")
+unlink(mainDir, "Rplots.pdf")
