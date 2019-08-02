@@ -130,4 +130,4 @@ p<- sund2b(
 mapshot(p, url = paste0(mainDir, "output/pptc-pdx-pie.html"))
 
 ##unlink Rplots.pdf file - not sure why this is being created
-unlink(mainDir, "Rplots.pdf")
+unlink(paste0(mainDir, "Rplots.pdf"))
