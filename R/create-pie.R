@@ -35,7 +35,7 @@ clin$Histology.oncotree <- ifelse(clin$Histology.Detailed2 == "Extracranial Rhab
 
 colores <- read.delim(paste0(dataDir, "pie-colors.txt"), header = T, sep = "\t")
 clin <- merge(clin, colores, all.x = T)
-names(clin)
+#names(clin)
 ###get assays per model
 clin$assay <- ifelse(clin$Have.snp.file == "yes" & clin$Have.maf == "yes" & clin$RNA.Part.of.PPTC == "yes", "SNP,WES,RNA",
                      ifelse(clin$Have.snp.file == "yes" & clin$Have.maf == "yes" & clin$RNA.Part.of.PPTC == "no", "SNP,WES",
