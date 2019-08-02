@@ -44,5 +44,5 @@ Pipeline
          git clone https://github.com/marislab/create-pptc-pdx-pie.git
 
          # Run script to create pie chart
-         Rscript create-pie.R
+         Rscript ~/create-pptc-pdx-pie/R/create-pie.R
 
